@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>AR Scanner</title>
+    
+    <link rel="stylesheet" href="css/ar-scanner.css" type="text/css">
+    
+     <script type="module">
+       import * as THREE from 'https://unpkg.com/three@0.164.0/build/three.module.js';
+       import { GLTFLoader } from 'https://unpkg.com/three@0.164.0/examples/jsm/loaders/GLTFLoader.js';
+
+       window.THREE = THREE; // проброс в глобал для твоих классов
+       window.GLTFLoader = GLTFLoader;
+     </script>
+
+     <script type="module" src="./js/ar-renderer.js"></script>
+     <script type="module" src="./js/app.js"></script>
+</head>
+<body class="ar-scanner-page">
+    
+    <video id="camera-video" playsinline></video>
+
+    <div id="scan-overlay">
+        <div class="scan-frame">
+            <div class="scan-line"></div>
+        </div>
+        <div class="scan-text">Наведите камеру на QR-код</div>
+    </div>
+
+    <div id="ar-container">
+        <canvas id="ar-canvas"></canvas>
+    </div>
+
+    <button id="photo-btn">Сделать фото 📸</button>
+    <button class="back-btn" onclick="window.location.href='index.html'">← Назад</button>
+    <div class="loading-indicator" id="loading">Загрузка камеры...</div>
+
+    <script src="js/qr-scanner.js"></script>
+    <script src="js/ar-renderer.js"></script>
+    <script src="js/photo-capture.js"></script>
+    <script src="js/app.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            if (window.arApp) {
+                window.arApp.initScannerPage();
+            }
+        });
+    </script>
+</body>
+</html>
