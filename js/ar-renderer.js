@@ -24,7 +24,7 @@ class ARRenderer {
 
     async loadModel(modelPath) {
         return new Promise((resolve) => {
-            const loader = new THREE.GLTFLoader();
+            const loader = new GLTFLoader();
             loader.load(modelPath,
                 (gltf) => {
                     this.model = gltf.scene;
