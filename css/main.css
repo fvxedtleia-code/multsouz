@@ -29,12 +29,12 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i');
 
 /* Linear Icons Font */
-@import url('./fonts/linear-icons-font/style.css');
+@import url('./fonts/Baloo_2/style.css');
 
 /* FontAwesome Free Icons Font */
-@import url('./fonts/fontawesome-free-5.12.1-web/css/all.min.css');
+@import url('./fonts/Baloo_2/Baloo2-VariableFont_wght.ttf');
 
-@import url('./fonts/linecons/style.css');
+@import url('./fonts/Baloo_2/Baloo2-VariableFont_wght.ttf');
 
 /* ============================================================================= 
 1. General styles
@@ -60,10 +60,9 @@ html {
 
 body {
   position: initial;
-  font-family: 'Poppins', Helvetica, sans-serif;
+  font-family: 'Baloo 2', cursive, sans-serif;
   font-size: 14px;
   font-weight: 400;
-  margin: 0;
   width: 100%;
   height: 100%;
   min-height: 100%;
@@ -81,8 +80,10 @@ body {
 }
 .mainpage{
   display: flex;
-  height: 100vh;
-  flex-wrap: wrap;
+  flex-direction: column; /* вертикальное расположение */
+  height: 100%;
+  flex-direction: column;
+  flex: 1;
 }
 
 .headlo{
@@ -90,6 +91,7 @@ body {
   display: flex;
   width: 90px ;
   height: 90px;
+  padding: 10px;
 }
 
 /* Body Animated Background */
@@ -216,7 +218,7 @@ h6 {
 }
 
 body, p {
-  font-family: 'Poppins', Helvetica, sans-serif;
+  font-family: 'Baloo 2', cursive, sans-serif;
   font-size: 14px;
   font-weight: 400;
   font-style: normal;
@@ -299,7 +301,7 @@ input[type="text"] {
   -moz-box-shadow: none;
   box-shadow: none;
   outline: none;
-  font-family: 'Poppins', Helvetica, sans-serif;
+  font-family: 'Baloo 2', cursive, sans-serif;
 }
 
 .form-control,
@@ -495,18 +497,19 @@ input[type="submit"],
   display: inline-block;
   position: relative;
   font-style: bold;
-  padding: .8em 2.1em;
+  padding: 20px 70px 20px 70px;
+  margin-top: 9%;
   margin-bottom: .75em;
   margin-right: .25em;
-  font-size: 1em;
   line-height: 1.2;
   border: 0;
   outline: 0;
-  color: #222;
+  color: #ffffff;
   text-shadow: none;
   background-color:#0C47AA;
-  border-radius: 30px;
-  font-family: 'Poppins', Helvetica, sans-serif;
+  font-size: 35px;
+  border-radius: 60px;
+  font-family: 'Baloo 2', cursive, sans-serif;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
@@ -826,6 +829,7 @@ td {
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
   backface-visibility: hidden;
+  z-index: 1;
 }
 
 .transform3d {
@@ -1333,7 +1337,7 @@ td {
     .site-main-menu .menu-item-has-children > a:after {
       content: "\f107";
       display: inline-block;
-      font-family: "Font Awesome 5 Free";
+      font-family: 'Baloo 2', cursive, sans-serif;
       font-style: normal;
       font-weight: 700;
       text-rendering: auto;
@@ -1798,7 +1802,7 @@ h3.comment-reply-title:before {
   display: inline-block;
   font-weight: 600;
   margin-right: 15px;
-  font-family: Poppins, Helvetica, sans-serif;
+  font-family: 'Baloo 2', cursive, sans-serif;
 }
 
 .info-list li .title:after {
@@ -2747,7 +2751,7 @@ ul.social-links li:last-child a {
   background: #4f565e;
   background: rgba(0,0,0,.12);
   display: inline-block;
-  font-family: 'Linearicons-Free';
+  font-family: 'Baloo 2', cursive, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -2865,7 +2869,7 @@ ul.social-links li:last-child a {
 .clients.owl-carousel .owl-nav .owl-prev,
 .clients.owl-carousel .owl-nav .owl-next {
   display: inline-block;
-  font-family: "Font Awesome 5 Free";
+  font-family: 'Baloo 2', cursive, sans-serif;
   font-weight: 900;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -2946,7 +2950,7 @@ ul.social-links li:last-child a {
 
 .portfolio-page-carousel .owl-nav [class*='owl-']:before {
   display: block;
-  font-family: 'Linearicons-Free';
+  font-family: 'Baloo 2', cursive, sans-serif;
   font-size: 30px;
   line-height: 44px;
 }
@@ -3298,7 +3302,7 @@ ul.social-links li:last-child a {
   background: #4f565e;
   background: rgba(79,86,94,.6);
   display: inline-block;
-  font-family: "Font Awesome 5 Free";
+  font-family: 'Baloo 2', cursive, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -3780,7 +3784,7 @@ a.post-thumbnail:hover {
 .comment-reply-link:before,
 .comment-reply-login:before,
 .comment-edit-link:before {
-  font-family: "Font Awesome 5 Free";
+  font-family: 'Baloo 2', cursive, sans-serif;
   margin-right: 3px;
 }
 
@@ -3791,7 +3795,7 @@ a.post-thumbnail:hover {
   top: 0;
   -webkit-font-smoothing: antialiased;
   display: inline-block;
-  font-family: "Font Awesome 5 Free";
+  font-family: 'Baloo 2', cursive, sans-serif;
   font-size: 16px;
   text-decoration: inherit;
   vertical-align: baseline;
@@ -4930,7 +4934,7 @@ a.post-thumbnail:hover {
   right: 0;
   content: "\f002";
   font-size: 1.2em;
-  font-family: "Font Awesome 5 Free";
+  font-family: 'Baloo 2', cursive, sans-serif;
   line-height: 48px; text-align: center;
   border-left: none;
   color: #ddd;
@@ -5322,7 +5326,7 @@ a.post-thumbnail:hover {
     color: #222;
     font-size: 18px;
     font-weight: 600;
-    font-family: Poppins, Helvetica, sans-serif;
+    font-family: 'Baloo 2', cursive, sans-serif;
     margin: 0;
     line-height: 50px;
   }
@@ -5769,7 +5773,7 @@ a.post-thumbnail:hover {
   color: #fff;
   font-size: 21px;
   font-weight: 300;
-  font-family: Oswald, Helvetica, sans-serif;
+  font-family: 'Baloo 2', cursive, sans-serif;
   margin: 5px 0;
   text-align: center;
 }
@@ -5889,6 +5893,7 @@ a.post-thumbnail:hover {
   }
 }
 .hero-section {
+  background-image: url(..img/back.png/);
   height: 100vh;
   background-size: cover;
   background-position: center;
@@ -5899,13 +5904,93 @@ a.post-thumbnail:hover {
 }
 
 .hero-title {
-  font-size: 40px;
+  font-size: 35px;
   font-weight: 700;
   margin-bottom: 20px;
   text-align: center;
+  font-family: 'Baloo 2', cursive, sans-serif;
+  z-index: 1;
 }
 
 .hero-subtitle {
   font-size: 22px;
   margin-bottom: 30px;
+}
+
+.grass{
+  background-image: url('../img/grass2.png');
+  background-size: cover;      
+  background-position: center;  
+  background-repeat: no-repeat;  
+  height: 20%;     
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0; 
+  z-index: -1; 
+  margin-bottom: -5px;
+  margin-right: -5;
+}
+
+.gena{
+  position: absolute;
+  right: 5px;      
+  bottom: 40px;   
+  width: 150px;   
+  pointer-events: none;
+}
+
+.cloud-1 {
+  position: absolute;
+  top: 3%;    /* отступ сверху, подберите под ваш макет */
+  left: 15px;   /* отступ слева */
+  width: 50%; /* размер облака */
+  pointer-events: none; /* чтобы облако не мешало кликам */
+  user-select: none;    /* чтобы нельзя было выделить */
+  z-index: -1;
+}
+.cloud-2 {
+  position: absolute;
+  top: 7%;    /* отступ сверху, подберите под ваш макет */
+  left: 67%;   /* отступ слева */
+  width: 50%; /* размер облака */
+  pointer-events: none; /* чтобы облако не мешало кликам */
+  user-select: none;    /* чтобы нельзя было выделить */
+  z-index: -1;
+}
+.cloud-3 {
+  position: absolute;
+  top: 20%;    /* отступ сверху, подберите под ваш макет */
+  left: 37%;   /* отступ слева */
+  width: 55%; /* размер облака */
+  pointer-events: none; /* чтобы облако не мешало кликам */
+  user-select: none;    /* чтобы нельзя было выделить */
+  z-index: -1;
+}
+.cloud-4 {
+  position: absolute;
+  top: 25%;    /* отступ сверху, подберите под ваш макет */
+  left: -20%;   /* отступ слева */
+  width: 55%; /* размер облака */
+  pointer-events: none; /* чтобы облако не мешало кликам */
+  user-select: none;    /* чтобы нельзя было выделить */
+  z-index: -1;
+}
+.cloud-5 {
+  position: absolute;
+  top: 36%;    /* отступ сверху, подберите под ваш макет */
+  left: 35%;   /* отступ слева */
+  width: 60%; /* размер облака */
+  pointer-events: none; /* чтобы облако не мешало кликам */
+  user-select: none;    /* чтобы нельзя было выделить */
+  z-index: -1;
+}
+.cloud-6 {
+  position: absolute;
+  top: 47%;    /* отступ сверху, подберите под ваш макет */
+  left: -20%;   /* отступ слева */
+  width: 55%; /* размер облака */
+  pointer-events: none; /* чтобы облако не мешало кликам */
+  user-select: none;    /* чтобы нельзя было выделить */
+  z-index: -1;
 }
