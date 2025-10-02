@@ -88,6 +88,7 @@ body {
 
 .headlo{
   margin: 0;
+  margin-right:15%;
   display: flex;
   width: 90px ;
   height: 90px;
@@ -1201,6 +1202,7 @@ td {
 .headar {
   background-color: #FADB59;
   width: 100vw;
+  display: flex;
 }
 
 @media only screen and (min-width: 991px) {
@@ -5993,4 +5995,90 @@ a.post-thumbnail:hover {
   pointer-events: none; /* чтобы облако не мешало кликам */
   user-select: none;    /* чтобы нельзя было выделить */
   z-index: -1;
+}
+.button2 {
+  display: flex; 
+  box-sizing: border-box;
+  border: none;
+  border-radius: 15px;
+  margin-top: 0%;
+  margin: 5%;
+  cursor: pointer;
+  justify-content: center;
+  background-color: #ffffff;
+  padding-top: 15%;
+  padding-left: 5%;
+  padding-right: 5%;
+  font-weight: 550;
+}
+.buttons{
+  display: flex;
+  justify-content: center; /* Центрирует по горизонтали */
+  text-align: center;
+}
+.buttons a{
+  display: flex; 
+  box-sizing: border-box;
+  border: none;
+  border-radius: 15px;
+  margin-top: 0%;
+  margin: 5%;
+  cursor: pointer;
+  justify-content: center;
+  background-color: #ffffff;
+  padding-top: 8%;
+  padding-left: 5%;
+  padding-right: 5%;
+  color: #1a3582;
+}
+
+.containerinfo2{
+  width: 100%; /* занимает всю ширину контейнера */
+  text-align: justify; /* выравнивание по левому краю, можно изменить на right или justify */
+  box-sizing: border-box; /* учитывает padding и border в ширине */
+  margin: 5% 5%;
+  align-items: flex-start; /* выравнивает содержимое по верху */
+  margin-top: -10%;
+  justify-content: center; /* горизонтальное центрирование содержимого */
+  align-items: flex-start; /* по вертикали кверху внутри флекса */
+  padding: 10%; /* внутренние отступы */
+  padding-bottom: 2%;
+  margin-bottom: 30%;
+  background-color: rgba(255, 255, 255, 0.5); /* полупрозрачный белый фон */
+  border-radius: 8px; /* скругление углов, по желанию */
+}
+.infor{
+  text-align: center;
+  padding: 0;
+  margin-top: -10%;
+  color: #1a3582;
+  font-weight: 550;
+}
+
+.textinfo{
+  color: #1a3582;
+  font-size: 12px;
+}
+
+.container1 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  margin-top: -40%;
+  gap: 10px;
+  padding: 0;
+  color: #06112f;
+}
+
+.container1 .item {
+  flex: 1 1 45%; /* ширина примерно 45%, чтобы две в ряд помещались с отступом */
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.container1 .item img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto 5px;
 }
