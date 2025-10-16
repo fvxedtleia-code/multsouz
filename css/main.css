@@ -5950,6 +5950,8 @@ a.post-thumbnail:hover {
   pointer-events: none; /* чтобы облако не мешало кликам */
   user-select: none;    /* чтобы нельзя было выделить */
   z-index: -1;
+  animation: floatClouds 30s ease-in-out infinite;
+  animation-direction: alternate;
 }
 .cloud-2 {
   position: absolute;
@@ -5959,6 +5961,8 @@ a.post-thumbnail:hover {
   pointer-events: none; /* чтобы облако не мешало кликам */
   user-select: none;    /* чтобы нельзя было выделить */
   z-index: -1;
+  animation: floatClouds 20s ease-in-out infinite;
+  animation-direction: alternate;
 }
 .cloud-3 {
   position: absolute;
@@ -5968,6 +5972,8 @@ a.post-thumbnail:hover {
   pointer-events: none; /* чтобы облако не мешало кликам */
   user-select: none;    /* чтобы нельзя было выделить */
   z-index: -1;
+  animation: floatClouds 40s ease-in-out infinite;
+  animation-direction: alternate;
 }
 .cloud-4 {
   position: absolute;
@@ -5977,6 +5983,8 @@ a.post-thumbnail:hover {
   pointer-events: none; /* чтобы облако не мешало кликам */
   user-select: none;    /* чтобы нельзя было выделить */
   z-index: -1;
+  animation: floatClouds 20s ease-in-out infinite;
+  animation-direction: alternate;
 }
 .cloud-5 {
   position: absolute;
@@ -5986,6 +5994,8 @@ a.post-thumbnail:hover {
   pointer-events: none; /* чтобы облако не мешало кликам */
   user-select: none;    /* чтобы нельзя было выделить */
   z-index: -1;
+  animation: floatClouds 45s ease-in-out infinite;
+  animation-direction: alternate;
 }
 .cloud-6 {
   position: absolute;
@@ -5995,7 +6005,40 @@ a.post-thumbnail:hover {
   pointer-events: none; /* чтобы облако не мешало кликам */
   user-select: none;    /* чтобы нельзя было выделить */
   z-index: -1;
+  animation: floatClouds 30s ease-in-out infinite;
+  animation-direction: alternate;
 }
+
+.cloud:nth-child(1) {
+  left: -200px;
+  top: 50px;
+  animation-delay: 0s;
+}
+.cloud:nth-child(2) {
+  left: -300px;
+  top: 120px;
+  animation-delay: 10s;
+}
+.cloud:nth-child(3) {
+  left: -250px;
+  top: 200px;
+  animation-delay: 20s;
+}
+.cloud:nth-child(4) {
+  left: -350px;
+  top: 80px;
+  animation-delay: 5s;
+}
+@keyframes floatClouds {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(1200px);
+  }
+}
+
+
 .button2 {
   display: flex; 
   box-sizing: border-box;
@@ -6010,6 +6053,24 @@ a.post-thumbnail:hover {
   padding-left: 5%;
   padding-right: 5%;
   font-weight: 550;
+}
+.btnn{
+  display: flex; 
+  box-sizing: border-box;
+  border: none;
+  border-radius: 15px;
+  margin-top: 0%;
+  margin: 5%;
+  cursor: pointer;
+  justify-content: center;
+  background-color: #ffffff;
+  padding-top: 15%;
+  padding-left: 15%;
+  padding-right: 15%;
+  font-size: 15px;
+  font-weight: 550;
+  min-width: 55px; 
+  min-height: 22px;
 }
 .buttons{
   display: flex;
@@ -6061,9 +6122,7 @@ a.post-thumbnail:hover {
 }
 
 .container1 {
-  display: flex;
-  flex-wrap: wrap;
-  width: 80%;
+  width: 60%;
   margin-top: -40%;
   gap: 10px;
   padding: 0;
@@ -6071,13 +6130,11 @@ a.post-thumbnail:hover {
 }
 
 .container1 .item {
-  flex: 1 1 45%; /* ширина примерно 45%, чтобы две в ряд помещались с отступом */
-  box-sizing: border-box;
   text-align: center;
 }
 
 .container1 .item img {
-  max-width: 100%;
+  max-width: 90%;
   height: auto;
   display: block;
   margin: 0 auto 5px;
