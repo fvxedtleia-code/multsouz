@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>3D Модель</title>
+
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      background: #f3f3f3;
+      color: #222;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    header {
+      width: 100%;
+      text-align: center;
+      background: #8a3d03;
+      color: white;
+      padding: 15px 0;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    model-viewer {
+      width: 100%;
+      max-width: 800px;
+      height: 500px;
+      background-color: #eee;
+      border-bottom: 3px solid #ff6f00;
+    }
+
+    section.info {
+      max-width: 800px;
+      padding: 20px;
+      background: white;
+      margin-top: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      border-radius: 12px;
+    }
+
+    h2 {
+      color: #ff6f00;
+      margin-top: 0;
+    }
+
+    p {
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+  <header>3D Модель — Пример AR</header>
+
+  <model-viewer src="/models/Texture_box.v1.glb" 
+                alt="3D модель" 
+                auto-rotate 
+                camera-controls 
+                ar 
+                ar-modes="webxr scene-viewer quick-look"
+                shadow-intensity="1">
+  </model-viewer>
+
+  <section class="info">
+    <h2>Название модели: </h2>
+    <p>
+      Именно среди этих ярких, солнечных мандаринов
+      в фильме «Чебурашка» начинается история самого доброго героя отечественной анимации.
+      Тёплый оранжевый цвет — символ детства, чуда и радости, который переносит зрителя в мир, 
+      где даже случайная находка может изменить всё.
+      В нашем 3D-макете воссоздана та самая сцена — ящик с мандаринами, из которого появился Чебурашка. 
+      Посмотрите на него внимательнее — возможно, и вы услышите лёгкий шелест мандариновых листьев и тихий голос Геннадия Крокодиловича.
+    </p>
+    <p><strong>Формат:</strong> GLB<br>
+       <strong>Размер файла:</strong> ~2.5 MB<br>
+       <strong>Автор:</strong> Миша</p>
+  </section>
+</body>
+</html>
