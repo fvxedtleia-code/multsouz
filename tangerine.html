@@ -68,11 +68,45 @@
     p {
       line-height: 1.6;
     }
+        .mod{
+      display: flex;
+      justify-content: center; /* центрирование по горизонтали */
+      align-items: center; /* центрирование по вертикали */
+      background: #FADB59; /* желтый фон */
+      width: 100%; /* по всей ширине */
+      padding: 10px 0; /* вертикальные отступы */
+      box-sizing: border-box;  
+    }
+    .str{
+      padding-left: 20px;
+      color: #eee;
+      font-size:40px;
+      padding-bottom: 5px;
+    }
+    .arrow-link {
+      display: flex;
+      align-items: center;
+      text-decoration: none; /* убрать подчеркивание у ссылки */
+    }
+    header {
+      width: 100%;
+      text-align: center;
+      background: #FADB59;
+      color: white;
+      padding: 0px 0;
+      font-size: 1.5rem;
+      font-weight: bold;
+      justify-content: center;
+      padding-left: 0px;
+      margin-left: 0px;
+    }
   </style>
 </head>
 <body>
+  <div class="mod">
+  <a href="models.html" class="arrow-link"><div class="str">&#8656;</div></a>
   <header>3D Модель — Пример AR</header>
-
+  </div>
   <model-viewer src="/models/Texture_box.v1.glb" 
                 alt="3D модель" 
                 auto-rotate 

@@ -6134,13 +6134,15 @@ a.post-thumbnail:hover {
 }
 
 .container1 .item img {
-  max-width: 90%;
+  max-width: 60%;
   height: auto;
   display: block;
   margin: 0 auto 5px;
 }
 
-
-
+.sbor{
+  font-size: 15px;
+  margin-bottom: 10px;
+}
 
 
